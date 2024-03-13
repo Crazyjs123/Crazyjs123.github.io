@@ -87,3 +87,8 @@ sui client call --package <合约地址> --module <合约模块名> --function p
 
 3.Sui Move可以用于创建数字身份认证系统，使用户能够安全地管理和共享他们的身份信息，同时保护个人隐私。
 
+
+
+了解更多Sui Move内容：
+- telegram: t.me/move_cn
+-  QQ群: 79489587
