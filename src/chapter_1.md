@@ -8,7 +8,7 @@
 
 下图为区块链2.0的逻辑架构图，展示了智能合约在区块链中的位置：
 
-![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/%E5%8C%BA%E5%9D%97%E9%93%BE%E9%80%BB%E8%BE%91%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
+![](https://raw.githubusercontent.com/Crazyjs123/crazyjs123.github.io/main/pic/%E5%8C%BA%E5%9D%97%E9%93%BE%E9%80%BB%E8%BE%91%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
 
 
 
