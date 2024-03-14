@@ -11,7 +11,7 @@
 
 #### 安装前准备
 
-###### curl
+##### curl
 
 这个一般Windows是自带的，检测是否自带运行命令：
 
@@ -19,11 +19,11 @@
 curl http://www.baidu.com
 ```
 
-###### git
+##### git
 
 详细的安装方法参见：[git安装方法](https://zhuanlan.zhihu.com/p/443527549)
 
-###### cmake
+##### cmake
 
 [下载](https://cmake.org/download/)
 
@@ -39,7 +39,7 @@ curl http://www.baidu.com
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/protocol_path.jpg?raw=true)
 
-######  LLVM Compiler Infrastructure
+#####  LLVM Compiler Infrastructure
 
 [下载](https://releases.llvm.org/) 点击进入，选择最新版本download跳到github页面，选择带有win字样的exe文件下载，并安装。一路next即可。
 
@@ -47,7 +47,7 @@ curl http://www.baidu.com
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/llvm_github.jpg?raw=true)
 
-###### rustup
+##### rustup
 
 rustup是一个管理工具链，用于管理不同平台下的 Rust 构建版本并使其互相兼容。在Windows环境中，使用 [rustup-ini.exe](https://www.rust-lang.org/zh-CN/tools/install)下载后，双击运行，会有一个选项，如下图，输入1回车即可安装。
 
