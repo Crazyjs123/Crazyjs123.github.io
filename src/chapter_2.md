@@ -85,7 +85,7 @@ vscode安装好后，点击侧边栏EXTENSIONS,在搜索栏搜索Sui Move Analyz
 
 - 1.获取当前地址，第一次执行有一些交互，按照图示输入即可。生成完当前地址再执行sui client active-address即可
 
-  ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/gas.png.png?raw=true)
+  ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/rustc.jpg?raw=true)
 
 - 2.在[Discord](https://blog.csdn.net/msdcp/article/details/127033151)中注册账号并通过验证
 
