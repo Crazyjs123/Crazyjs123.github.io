@@ -29,43 +29,43 @@ curl http://www.baidu.com
 
 选择带有windows标志的.msi文件下载，具体下载x64、AMD64还是i386，参见[git安装方法](https://zhuanlan.zhihu.com/p/443527549)。下载完成后，双击安装，一路点next完成安装
 
-![](../pic/cmake_installer.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/cmake_installer.jpg?raw=true)
 
 ###### protocol buffer
 
 [下载](https://github.com/protocolbuffers/protobuf/releases)下载最新版本，带有win字样的压缩包即可。下载完解压缩，把bin目录所在目录，添加到环境变量Path中，如下图：
 
-![](../pic/protocol.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/protocol.jpg?raw=true)
 
-![](../pic/protocol_path.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/protocol_path.jpg?raw=true)
 
 ######  LLVM Compiler Infrastructure
 
 [下载](https://releases.llvm.org/) 点击进入，选择最新版本download跳到github页面，选择带有win字样的exe文件下载，并安装。一路next即可。
 
-![](../pic/llvm_download.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/llvm_download.jpg?raw=true)
 
-![](../pic/llvm_github.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/llvm_github.jpg?raw=true)
 
 ###### rustup
 
 rustup是一个管理工具链，用于管理不同平台下的 Rust 构建版本并使其互相兼容。在Windows环境中，使用 [rustup-ini.exe](https://www.rust-lang.org/zh-CN/tools/install)下载后，双击运行，会有一个选项，如下图，输入1回车即可安装。
 
-![](../pic/install_rustup.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/intsall_rustup.png?raw=true)
 
 安装完成后，enter键关闭窗口，重新打开cmd窗口，输入下图命令，判断是否安装成功
 
-![](../pic/rustc.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/rustc.jpg?raw=true)
 
 #### 下载安装Sui
 
 [下载](https://github.com/MystenLabs/sui/releases)打开链接，点击带有windows字样的压缩包，下载并解压，把target/release/文件夹内的可执行文件名中-windows-x86_64去掉，并复制到.cargo/bin文件夹中。如下图：
 
-![](../pic/sui_exec.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/sui_exec.png?raw=true)
 
 打开一个cmd命令行窗口，输入以下命令验证安装是否成功:
 
-![](../pic/sui_installed.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/sui_installed.png?raw=true)
 
 #### 安装编辑器及插件
 
@@ -85,13 +85,13 @@ vscode安装好后，点击侧边栏EXTENSIONS,在搜索栏搜索Sui Move Analyz
 
 - 1.获取当前地址，第一次执行有一些交互，按照图示输入即可。生成完当前地址再执行sui client active-address即可
 
-  ![](../pic/gas.png)
+  ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/gas.png.png?raw=true)
 
 - 2.在[Discord](https://blog.csdn.net/msdcp/article/details/127033151)中注册账号并通过验证
 
 - 3.在#devnet-faucet频道输入框输入 !faucet <WALLET ADDRESS> 。使用sui client gas几秒钟后就可以看到gas充值成功
 
-  ![](../pic/get_gas.png)
+  ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/get_gas.png?raw=true)
 
 
 
