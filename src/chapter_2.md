@@ -9,9 +9,9 @@
 
 入门的朋友，我建议还是选择既能了解安装过程又不会太过复杂的二进制安装。这篇文章将主要讲解如何在Windows上使用二进制文件安装本地开发环境。Windows安装也有两种方法，一种是在Windows子系统Ubuntu上安装，一种则是安装在Windows上。WSL(Windows Subsystem for Linux)方法网上已经有详细的教程这里不再赘述，我们就一起来看看如何直接安装到Windows上。
 
-#### 安装前准备
+### 安装前准备
 
-##### curl
+#### curl
 
 这个一般Windows是自带的，检测是否自带运行命令：
 
@@ -19,35 +19,33 @@
 curl http://www.baidu.com
 ```
 
-##### git
+#### git
 
 详细的安装方法参见：[git安装方法](https://zhuanlan.zhihu.com/p/443527549)
 
-##### cmake
+#### cmake
 
-[下载](https://cmake.org/download/)
-
-选择带有windows标志的.msi文件下载，具体下载x64、AMD64还是i386，参见[git安装方法](https://zhuanlan.zhihu.com/p/443527549)。下载完成后，双击安装，一路点next完成安装
+[下载页面](https://cmake.org/download/)选择带有windows标志的.msi文件下载，具体下载x64、AMD64还是i386，参见[git安装方法](https://zhuanlan.zhihu.com/p/443527549)。下载完成后，双击安装，一路点next完成安装
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/cmake_installer.jpg?raw=true)
 
-###### protocol buffer
+#### protocol buffer
 
-[下载](https://github.com/protocolbuffers/protobuf/releases)下载最新版本，带有win字样的压缩包即可。下载完解压缩，把bin目录所在目录，添加到环境变量Path中，如下图：
+[下载页面](https://github.com/protocolbuffers/protobuf/releases)下载最新版本，带有win字样的压缩包即可。下载完解压缩，把bin目录所在目录，添加到环境变量Path中，如下图：
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/protocol.jpg?raw=true)
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/protocol_path.jpg?raw=true)
 
-#####  LLVM Compiler Infrastructure
+####  LLVM Compiler Infrastructure
 
-[下载](https://releases.llvm.org/) 点击进入，选择最新版本download跳到github页面，选择带有win字样的exe文件下载，并安装。一路next即可。
+[下载页面](https://releases.llvm.org/) 点击进入，选择最新版本download跳到github页面，选择带有win字样的exe文件下载，并安装。一路next即可。
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/llvm_download.jpg?raw=true)
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/llvm_github.jpg?raw=true)
 
-##### rustup
+#### rustup
 
 rustup是一个管理工具链，用于管理不同平台下的 Rust 构建版本并使其互相兼容。在Windows环境中，使用 [rustup-ini.exe](https://www.rust-lang.org/zh-CN/tools/install)下载后，双击运行，会有一个选项，如下图，输入1回车即可安装。
 
@@ -57,9 +55,9 @@ rustup是一个管理工具链，用于管理不同平台下的 Rust 构建版�
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/rustc.jpg?raw=true)
 
-#### 下载安装Sui
+### 下载安装Sui
 
-[下载](https://github.com/MystenLabs/sui/releases)打开链接，点击带有windows字样的压缩包，下载并解压，把target/release/文件夹内的可执行文件名中-windows-x86_64去掉，并复制到.cargo/bin文件夹中。如下图：
+[下载页面](https://github.com/MystenLabs/sui/releases)，点击带有windows字样的压缩包，下载并解压，把target/release/文件夹内的可执行文件名中-windows-x86_64去掉，并复制到.cargo/bin文件夹中。如下图：
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/sui_exec.png?raw=true)
 
@@ -67,7 +65,7 @@ rustup是一个管理工具链，用于管理不同平台下的 Rust 构建版�
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/sui_installed.png?raw=true)
 
-#### 安装编辑器及插件
+### 安装编辑器及插件
 
 vscode编辑器的安装教程，网上已经有很多，这里不再赘述。[详见](https://blog.csdn.net/msdcp/article/details/127033151)
 
@@ -79,13 +77,13 @@ vscode安装好后，点击侧边栏EXTENSIONS,在搜索栏搜索Sui Move Analyz
 
 2.要先安装sui-move-analyzer language server,然后再安装此插件。
 
-#### 申请开发环境gas
+### 申请开发环境gas
 
 上文我们也讲到，无论是将代码部署到链上还是调用函数，都需要gas。那我们开发环境怎么办呢？难不成要付费开发？这倒是不用，我们可以免费申请devnet的gas。申请方法如下：
 
 - 1.获取当前地址，第一次执行有一些交互，按照图示输入即可。生成完当前地址再执行sui client active-address即可
 
-  ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/rustc.jpg?raw=true)
+  ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/gas.png?raw=true)
 
 - 2.在[Discord](https://blog.csdn.net/msdcp/article/details/127033151)中注册账号并通过验证
 
