@@ -56,7 +56,7 @@ hello_world = "0x0"
 
 现在我们在sources文件夹内新建一个文件，命名为helloworld.move,然后编写一个名为hello_world的模块：
 
-```move
+```rust
 module hello_world::hello_world {
     use sui::object::{Self, UID};
     use sui::transfer;
@@ -98,7 +98,7 @@ module <包的地址>::<模块名称> {
 
 - 直接引用:
 
-  ```move
+  ```rust
   struct HelloWorldObject has key, store {
   	id: UID,
       text: std::string::String //直接引用std::string模块的utf8方法
@@ -107,7 +107,7 @@ module <包的地址>::<模块名称> {
 
 - 使用use引用结构体或者函数
 
-  ```move
+  ```rust
   use sui::object::UID //申明引用UID结构体（或函数）
   struct HelloWorldObject has key, store {
   	id: UID, //直接使用结构体名（或函数）
@@ -117,14 +117,14 @@ module <包的地址>::<模块名称> {
 
 - 使用use 引用模块
 
-  ```move
+  ```rust
   use sui::transfer;
   transfer::public_transfer(object, tx_context::sender(ctx));
   ```
 
 - 使用Self关键字引用模块自身
 
-  ```move
+  ```rust
    use sui::tx_context::{Self, TxContext};
    tx_context::sender(ctx)//使用模块名调用函数
    //直接使用TxContext引用TxContext结构体
@@ -132,14 +132,14 @@ module <包的地址>::<模块名称> {
 
 - 同一个模块多个引用
 
-  ```move
+  ```rust
   #使用花括号括起来，并逗号隔开
   use sui::tx_context::{Self, TxContext};
   ```
 
 不同的申明方式之间也可以转换使用，效果是一样。比如：
 
-```move 
+```rust
 use sui::tx_context::{Self, TxContext};
 tx_context::sender(ctx)//使用模块名调用函数
 //直接使用TxContext引用TxContext结构体
@@ -147,7 +147,7 @@ tx_context::sender(ctx)//使用模块名调用函数
 
 等价于：
 
-```move
+```rust
 use sui::tx_context;
 tx_context::sender(ctx)//使用模块名调用函数
 //TxContext结构体则使用tx_context::TxContext引用
@@ -155,7 +155,7 @@ tx_context::sender(ctx)//使用模块名调用函数
 
 还等价于：
 
-```move
+```rust
 use sui::tx_context::{sender, TxContext};
 sender(ctx)//直接调用函数
 //直接使用TxContext引用TxContext结构体
@@ -165,7 +165,7 @@ sender(ctx)//直接调用函数
 
 我们上面讲了如何引用模块，那如果模块不愿意被引用怎么办呢？这就涉及到访问权限的问题。访问模块内容分为访问结构体和函数。而结构体内部的字段不能跨模块使用，只能通过调用与结构体同模块的函数实现，如下图：
 
-```
+```rust
  struct HelloWorldObject has key, store {
         id: UID,
         text: std::string::String 
@@ -186,7 +186,7 @@ sender(ctx)//直接调用函数
 
   使用关键词public(friend)申明函数，那就只有在模块内申明了是“朋友”的模块才可以调用。如下：
 
-  ```move
+  ```rust
   //申明朋友模块
   friend hello_world::test;
   //只有朋友模块才可以引用的函数
