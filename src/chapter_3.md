@@ -10,7 +10,7 @@ sui move new hello_world
 
 这个命令会自动新建一个名为hello_world的文件夹，文件夹结构如图：
 
-![](../pic/tree.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/tree.png?raw=true)
 
 这个文件夹包含一个sources文件夹和一个Move.toml清单文件，其中sources目录是存放我们编写的代码，里面的一个文件对应一个模块。Move.toml文件则是一个清单文件，用于申明包的元数据信息、依赖、地址等。详情请看下面代码块：
 
