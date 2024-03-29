@@ -90,7 +90,7 @@ public fun drop(a: Article) {
 
 我们发布合约后调用这个方法删除对象。在浏览器查看本次交易的费用明细可以发现：本次交易给我们返还了0.000351964 SUI！删除对象释放存储空间就会返还一部分gas，那我们在编码过程中积极删除无用对象可以大大减少gas消耗！
 
-![]()
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/delete_object.png?raw=true)
 
 #### 对象的分类
 
