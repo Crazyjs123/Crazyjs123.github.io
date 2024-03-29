@@ -5,3 +5,5 @@
 - [3.轻松入门Sui Move: 清单文件和模块](./chapter_3.md)
 - [4.轻松入门Sui Move: 基础语法](./chapter_4.md)
 - [5.轻松入门Sui Move: Debug、单元测试和命令行工具](./chapter_5.md)
+- [6.轻松入门Sui Move: 结构体](./chapter_6.md)
+- [7.轻松入门Sui Move: 对象（上）](./chapter_7.md)
