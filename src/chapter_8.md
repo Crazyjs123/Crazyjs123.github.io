@@ -191,7 +191,7 @@ public entry fun transfer_person(company: Company, ctx: &mut TxContext) {
 
 本段代码执行完，输出的Transaction Effects 模块，会有一个 Unwrapped Objects，展示的就是解开嵌套的对象。如下：
 
-![](unwrap_object.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/unwrap_object.png?raw=true)
 
 ###### 应用场景
 

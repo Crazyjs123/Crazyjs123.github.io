@@ -116,11 +116,11 @@ public entry fun new(ctx: &mut TxContext) {
 
 编译报错：
 
-![](\\wsl.localhost\Ubuntu-20.04\home\yijiajia\mybooks\src\copy.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/copy.png?raw=true)
 
 那我们是不是加上copy ability就可以顺利通过编译呢？？？我们加上之后继续编译，报错如下：
 
-![](\\wsl.localhost\Ubuntu-20.04\home\yijiajia\mybooks\src\copy2.png)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/coyp2.png?raw=true)
 
 **如果要对一个结构体加上copy ability,那么这个结构体内所有字段都需要拥有该ability**然而对象Company的id字段不具有copy ability，而这个id字段是每个对象都有的字段，所以可以得出结论：**copy ability不能用于对象，只能用于非对象结构体**。
 
