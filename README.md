@@ -10,3 +10,7 @@
 - [8.轻松入门Sui Move: 对象（下）](./chapter_8.md)
 - [9.轻松入门Sui Move: Ability](./chapter_9.md)
 - [10.轻松入门Sui Move: 动态字段](./chapter_10.md)
+- [11.轻松入门Sui Move: Bag和Table](./chapter_11.md)
+- [12.轻松入门Sui Move: 父子对象](./chapter_12.md)
+- [13.轻松入门Sui Move: 时间和泛型](./chapter_13.md)
+- [番外篇：我在dacade赚了100SUI](./extra_story.md)
