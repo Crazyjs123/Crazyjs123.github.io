@@ -4,7 +4,7 @@
 
 这是我在dacede中提现100SUI的截图:
 
-![](dacade.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/dacade.jpg?raw=true)
 
 这个挑战的目标是
 
@@ -14,7 +14,7 @@
 
 按照上述要求编写，70分以上就能获得100SUI。他们的评分分为两个部分，一个是原创分满分60，另外一个部分则是代码质量分满分40分。原创是非常重要的分数，建议大家在写之前看看历次已经得分的提交，如果有人写过的功能最好就不要写了，原创分低的话很难超过70。高质量代码他们也给出了范例，可以拉优秀的代码下来研究一下再写
 
-![](best_submit.jpg)
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/best_submit.jpg?raw=true)
 
 代码提交到代码仓库，并在dacade中提交你的代码仓库地址，接下来只需要等待审核就可以啦。根据我的观察审核周期一般是在一周到一个月不等，只要审核通过就会收到邮件。
 
