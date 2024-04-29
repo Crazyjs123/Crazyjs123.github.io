@@ -13,4 +13,5 @@
 - [11.轻松入门Sui Move: Bag和Table](https://crazyjs123.github.io/chapter_11.html)
 - [12.轻松入门Sui Move: 父子对象](https://crazyjs123.github.io/chapter_12.html)
 - [13.轻松入门Sui Move: 时间和泛型](https://crazyjs123.github.io/chapter_13.html)
+- [14.轻松入门Sui Move: 集合(上)](https://crazyjs123.github.io/chapter_14.html)
 - [番外篇：我在dacade赚了100SUI](https://crazyjs123.github.io/extra_story.html)

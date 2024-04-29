@@ -14,3 +14,4 @@
 - [12.轻松入门Sui Move: 父子对象](./chapter_12.md)
 - [13.轻松入门Sui Move: 时间和泛型](./chapter_13.md)
 - [番外篇：我在dacade赚了100SUI](./extra_story.md)
+- [14.轻松入门Sui Move:  集合（上）](./chapter_14.md)

@@ -1,12 +1,12 @@
 ## 番外篇：我在dacade赚了100SUI
 
-事先说明，本篇文章不是广告，只是讲述我如何在Dacade的挑战中赢得了100SUI的奖励。如果大家有疑问可以自己去dacade官网查看，仔细辨别：https://dacade.org/communities/sui/challenges/19885730-fb83-477a-b95b-4ab265b61438
+事先说明，本篇文章不是广告，只是讲述我如何在Dacade的挑战中赢得了100SUI的经历。如果大家有疑问可以自己去dacade官网查看，仔细辨别：https://dacade.org/communities/sui/challenges/19885730-fb83-477a-b95b-4ab265b61438
 
 这是我在dacede中提现100SUI的截图:
 
 ![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/dacade.jpg?raw=true)
 
-这个挑战的目标是
+这个挑战的要求是
 
 - 在DEFI领域创建创新项目，例如用于交易所，贷款平台或产量耕作应用程序的原型。
 
@@ -14,13 +14,11 @@
 
 按照上述要求编写，70分以上就能获得100SUI。他们的评分分为两个部分，一个是原创分满分60，另外一个部分则是代码质量分满分40分。原创是非常重要的分数，建议大家在写之前看看历次已经得分的提交，如果有人写过的功能最好就不要写了，原创分低的话很难超过70。高质量代码他们也给出了范例，可以拉优秀的代码下来研究一下再写
 
-![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/best_submit.jpg?raw=true)
-
-代码提交到代码仓库，并在dacade中提交你的代码仓库地址，接下来只需要等待审核就可以啦。根据我的观察审核周期一般是在一周到一个月不等，只要审核通过就会收到邮件。
+![](https://github.com/Crazyjs123/crazyjs123.github.io/blob/main/pic/best_submit.jpg?raw=true)代码提写完代码提交到代码仓库，并在dacade中提交你的代码仓库地址，接下来只需要等待审核就可以啦。根据我的观察审核周期是在一周到一个月不等，只要审核通过就会收到邮件。
 
 下面我介绍一下我在dacade审核通过的代码，希望能给大家一起启发：
 
-我编写的是一个公平公开的租房平台，可以防止提灯定损。在这平台中有三个角色：平台管理员，房东，房客。房东发布租房信息，房客租房时需要缴纳房租和押金，房租将会打款给房东，而押金则交由平台托管。等房租到期房东验房并管理员审核之后才能扣除押金，等房客退房时退还剩余押金。
+我编写的是一个公平公开的租房平台，可以防止提灯定损。在这平台中有三个角色：平台管理员，房东，房客。房东发布租房信息，房客租房时需要缴纳房租和押金，房租将会打款给房东，而押金则交由平台托管。等房租到期房东验房并管理员审核之后才能扣除押金，房客退房时退还剩余押金。
 
 租房平台对象：
 
@@ -38,9 +36,9 @@ struct RentalPlatform has key {
 }
 ```
 
-这是一个共享对象，不仅保存了房东发布的租房信息（notices）,还保存了租房押金，balance就是所有租房押金的余额，deposit_pool保存了每个房屋的押金明细。
+这是一个共享对象，不仅保存了房东发布的租房信息（notices）,还保存了租房押金，balance就是所有租房押金的总和，deposit_pool保存了每个房屋的押金明细。
 
-还有一个平台管理员的对象，是一个独有对象，创建它主要是为了权限管理，只有拥有这个对象的上下文才能请求比如审核严防报告的接口。这个对象是在创建租房平台的接口中创建并转交给请求者。
+还有一个平台管理员的对象，是一个独有对象，创建它主要是为了权限管理，只有拥有这个对象的上下文才能请求比如审核验房报告的接口。这个对象是在创建租房平台的接口中创建并转交给请求者的。
 
 ```rust
 //presents Rental platform administrator
@@ -108,7 +106,7 @@ struct Lease has key,store {
 }
 ```
 
-在租约到期之后，房东需要出具验房报告并提交管理员审核，以获取房屋损坏的赔偿。验房报告包含房屋损伤相关的证明
+在租约到期之后，房东需要出具验房报告并提交给管理员审核，以获取房屋损坏的赔偿。验房报告包含房屋损伤相关的证明
 
 ```rust
 //presents inspection report object.The landlord submits the inspection report, and the administrator reviews the inspection report
@@ -318,8 +316,6 @@ public fun tenant_return_house(platform: &mut RentalPlatform, lease: &Lease, hou
 
 
 其实这种赢奖励的机会并不少，大家在学习Web3的过程中应该积极参与这些活动，用金钱激励自己才能学的更快更深刻。
-
-
 
 了解更多活动：
 
