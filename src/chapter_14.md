@@ -284,3 +284,7 @@ public fun rank(sr: &mut SchoolReport) {
 
 pop_max每次一定会输出堆内最大值,多次调用直到堆内无数据,即可实现对分数的排序.
 
+了解更多Sui Move内容：
+
+- telegram: t.me/move_cn
+- QQ群: 79489587
